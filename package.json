@@ -1,5 +1,5 @@
 {
-  "name": "hono-socket.io",
+  "name": "honosocket",
   "main": "index.ts",
   "scripts": {
     "dev": "tsx --watch index.ts",
