@@ -15,6 +15,11 @@
     "noUncheckedIndexedAccess": true,
     "noImplicitOverride": true,
 
+
+    "types": [
+      "@cloudflare/workers-types"
+    ],
+    
     /* If NOT transpiling with TypeScript: */
     "module": "preserve",
     "noEmit": true,
