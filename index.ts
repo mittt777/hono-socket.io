@@ -28,6 +28,18 @@ app.post("/message", async (c) => {
   return c.json({ message: "ok" });
 });
 
+
+app.post("/message8", async (c) => {
+  const io = c.get("io"); // get io from context
+  const body = await c.req.json();
+
+  console.log("message via post: " + body.message);
+  io.emit("chat5 message", body.message);
+
+  return c.json({ message: "ok" });
+});
+
+
 // create a socket.io server
 const io = new Server();
 io.on("connection", (socket) => {
